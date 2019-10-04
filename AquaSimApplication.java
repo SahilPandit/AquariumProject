@@ -11,8 +11,8 @@ import java.util.Random;
  *                                 displays an empty aquarium.<br>
  *   (date), (your name), Modified to .... <br>
  *
- *  @author  Alyce Brady  (should be Your Name)
- *  @version 23 March 2008  (should be today's date)
+ *  @author  Sahil Pandit (should be Your Name)
+ *  @version 4 October 2019  (should be today's date)
  *  @see AquariumController
  **/
 public class AquaSimApplication
