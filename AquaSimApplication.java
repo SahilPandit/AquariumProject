@@ -27,7 +27,6 @@ public class AquaSimApplication
 
         // CONSTRUCT OBJECTS NEEDED FOR THE AQUARIUM SIMULATION.
         Random generator =new Random();
-        
         int randNum = generator.nextInt(10);
 
         // Construct the aquarium.  Specify its dimensions when creating it.
@@ -96,24 +95,17 @@ public class AquaSimApplication
         // WRAP UP.
         Public static getColor()
         {
-{
-int randNum = generator.nextInt(10);
+         int randNum = generator.nextInt(10);
+         {
 if (randNum==0)
-}
 return Color.RED;
-else if (randNum==1)
+
+if (randNum==1)
 return Color.BLUE;
 else
-}
+
 return Color.GREEN;
 }
 }
-
         // Remind user how to quit application.
         userInterface.println ("Close GUI display window to quit.");
-
-    }//end main
-
-}//end class
-}
-
