@@ -20,8 +20,11 @@ public class AquaSimApplication
     /**
      *  This is the main function.  It executes the program.
      *  @param    String args[] is never used
-     **/
-    public static void main(String args[])
+     **/ 
+    
+    private static Random generator()
+    
+    public static void main(String [] args)
     {
         System.out.println("Hello World.");
 
@@ -38,11 +41,15 @@ public class AquaSimApplication
         AquaFish sahil;
         AquaFish Justin;
         AquaFish Trevor;
-         // not running properly 
-         
-        aqua.add (sahil);
-        aqua.add(Justin);
-        aqua.add(Trevor);
+         // not running properly
+ new AquaFish(aqua, getColor());
+ aqua.add(sahil);
+
+ new AquaFish(aqua,getColor());
+ aqua.add(Justin);
+
+ new AquaFish(aqua,getColor());
+ aqua.add(Trevor);
         
         sahil.moveForward();
         Justin.moveForward();
@@ -50,6 +57,7 @@ public class AquaSimApplication
         sahil.moveForward();
         Justin.moveForward();
         Trevor.moveForward();
+    
 
         // Construct a graphical user interface (GUI) to display and control
         // the simulation.  The user interface needs to know about the
@@ -71,11 +79,11 @@ public class AquaSimApplication
 
         // Make the fish move and redisplay.
         //      CODE MISSING HERE!
+        for (int steps=0; steps<userInterface.getNumberOfSteps(); steps ++)
+        {
+         
           for(int i=1;;)
           {
-        
-        
-              
            if (sahil.atWall())
     
             sahil.changeDir();
@@ -87,25 +95,31 @@ public class AquaSimApplication
             Justin.moveForward();
             if (Justin.atWall())
             Justin.changeDir();
+            
             userInterface.showAquarium();
-        
+        }  
            
 
 
         // WRAP UP.
-        Public static getColor()
-        {
-         int randNum = generator.nextInt(10);
-         {
-if (randNum==0)
-return Color.RED;
-
-if (randNum==1)
-return Color.BLUE;
-else
-
-return Color.GREEN;
-}
-}
-        // Remind user how to quit application.
+         // Remind user how to quit application.
         userInterface.println ("Close GUI display window to quit.");
+    }// end main
+    
+    /* public static Color getColor()
+    {
+         int randNum = generator.nextInt(10);
+        if (randNum==0)
+        return Color. RED;
+        else if (randNum==1)
+        return Color.GREEN;
+         else
+         return Color.BLUE;
+        
+    }
+    */   
+        
+}
+}
+
+
