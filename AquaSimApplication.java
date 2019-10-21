@@ -17,12 +17,13 @@ import java.util.Random;
  **/
 public class AquaSimApplication
 {
-    /**
+    /** program my life away 
+     // Constructor are one of the best thing in world!
      *  This is the main function.  It executes the program.
      *  @param    String args[] is never used
      **/ 
     
-    private static Random generator()
+    public static Random generator()
     
     public static void main(String [] args)
     {
